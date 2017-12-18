@@ -1,0 +1,125 @@
+#wrapper{
+    max-width: 68rem;
+    margin:4rem auto;
+}
+body{
+    background-image: url('templated-visualize/images/bg.jpg');
+    background-size:cover;
+}
+
+#header{
+    text-align: center;
+    margin:1rem;
+    padding-top:2rem;
+}
+#header h1{
+    color:rgba(255,255,255,0.65);
+    font-size:1.5rem;
+    font-weight:200;
+    line-height:2.5rem;
+    margin-top: 2rem;
+}
+#header h1 strong{
+    color:white;
+    font-weight:200;
+    
+}
+#header h1 a{
+    color:rgba(255,255,255,0.65);
+    border-bottom: 1px dotted rgba(255,255,255,0.65);
+    text-decoration: none;
+}
+#header h1 a:hover{
+    color:white;
+    border:none;
+}
+#header .avatar{
+    border-radius: 100%;
+    display:inline-block;
+    padding:0.5rem;
+    border:1px solid rgba(255,255,255,0.25);
+    background-color:rgba(255,255,255,0.075);
+    margin-bottom:1.5rem;
+}
+.avatar img{
+    border-radius: 100%;
+    display:block;
+}
+#header ul.icons li{
+    display:inline-block;
+    border:1px solid rgba(255,255,255,0.25);
+    border-radius:100%;
+    background-color:rgba(255,255,255,0.075);
+    width:3rem;
+    height:3rem;
+    display:inline-flex;
+    margin:2rem 1rem 3rem 1rem;
+    align-items:center;
+    justify-content: center;
+    
+}
+#header ul.icons li a{
+    color:rgba(255,255,255,0.65);
+    text-decoration: none;
+    font-size:2rem;
+    
+}
+#header ul.icons li .label{
+    display: none;
+}
+#main .thumbnails{
+    display:flex;
+}
+#main .thumbnails>div{
+    flex-grow:1;
+    margin:2rem 1rem;
+    
+}
+#main .thumbnails img{
+    width:100%;
+    border-top-left-radius:0.5rem;
+    border-top-right-radius:0.5rem;
+    display: block;    
+}
+#main .thumbnails h3{
+    color:rgba(255,255,255,0.65);
+    background-color:rgba(255,255,255,0.2);
+    font-size:1rem;
+    text-align: center;
+    padding:1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.6);
+    border-left: 1px solid rgba(255,255,255,0.6);
+    border-right: 1px solid rgba(255,255,255,0.6);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+#main .thumbnails a{
+    text-decoration: none;
+    margin-bottom:2rem;
+    display: block;
+}
+#footer{
+    text-align: center;
+    color:rgba(255,255,255,0.6);
+    padding-bottom: 5rem;
+}
+#footer:before{
+    content:'';
+    display: block;
+    border-top:1px solid white;
+    width:10rem;
+    margin:3rem auto;
+}
+#footer a{
+    text-decoration: none;
+    color:rgba(255,255,255,0.6);
+    border-bottom:1px dotted rgba(255,255,255,0.6);
+}
+#footer a:hover{
+    border:1px soild hotpink;
+}
+@media(max-width:600px){
+    #main .thumbnails{
+    display:block;
+    }
+}
